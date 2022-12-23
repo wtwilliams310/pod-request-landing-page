@@ -39,6 +39,7 @@ p, h1, h2, h3, h4, h5, h6 {
 :root {
 
 	--clr-aquamarine: hsl(158, 74%, 61%);
+	--clr-light-aquamarine: hsl(157, 100%, 85%);
 	--clr-dark-slate: hsl(225, 26%, 23%);
 	--clr-medium-slate: hsl(225, 21%, 45%);
 	--clr-light-steel-blue: hsl(225, 39%, 83%);
@@ -88,10 +89,9 @@ body {
 
 .content {
 	display: grid;
-	grid-template-rows: 26% 27% 21% 26%;
-	margin-bottom: 10rem;
-/*	grid-template-rows: repeat(4, 1fr);*/
-	max-height: 400px;
+	grid-template-rows: 95px 105px 70px 120px;
+/*	margin-bottom: 10rem;*/
+/*	max-height: 400px;*/
 	padding: 0 1.65rem;
 
 }
@@ -124,13 +124,9 @@ h2, p {
 
 .podcast-logos {
 	height: 17px;
-/*	width: 15px;*/
 	display: flex;
 	margin: auto;
-/*	justify-content: center;*/
 	gap: 1.2em;
-/*	align-content: center;*/
-/*margin-top: .5rem;*/
 }
 
 .google {
@@ -141,21 +137,24 @@ h2, p {
 	height: auto;
 }
 
+/*form---------------------------------------------------------*/
+
+
 .form {
 	display: grid;
-	gap: 1em;
+/*	grid-template-rows: 48px 17px 48px;*/
+/*	gap: 1em;*/
 	font-size: var(--fs-bold-form);
 	line-height: var(--lh-bold-form);
 	font-weight: var(--fw-bold);
-/*	margin-bottom: 5rem;*/
-
+	margin-top: 1.3rem;
 
 }
 
 input {
 	border-radius: 50px;
 	border: none;
-	padding: .6rem 0;
+	padding: .55rem 0;
 }
 
 .email-address {
@@ -165,4 +164,57 @@ input {
 
 .request-button {
 	background: var(--clr-aquamarine);
+	cursor: pointer;
+
 }
+
+input:focus {
+	outline: none;
+}
+
+.email-address:focus {
+	color: var(--clr-white);
+}
+
+.request-button:is(:hover, :focus) {
+	background: var(--clr-light-aquamarine);
+}
+
+.email-alert {
+	color: red;
+	font-size: 13px;
+	line-height: 16px;
+	margin-left: 2rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
