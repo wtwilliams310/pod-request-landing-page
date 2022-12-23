@@ -44,16 +44,17 @@ p, h1, h2, h3, h4, h5, h6 {
 	--clr-light-steel-blue: hsl(225, 39%, 83%);
 
 
-	--clr-dark-grey: hsl(224, 34%, 11%);
+	--clr-dark-grey: rgba(19,24,38,1.000);
 	--clr-white: hsl(0, 0%, 100%);
 
 
 	--ff-Chivo: 'Chivo', sans-serif;
 
-	--fw-300: 300;
-	--fw-400: 400;
-	--fw-700: 700;
-	--fw-900: 900;
+	--fw-extra-light: 200;
+	--fw-light: 300;
+	--fw-regular: 400;
+	--fw-bold: 700;
+	--fw-black: 900;
 
 	--fs-light-body: 1.1rem;
 	--lh-light-body: 1.8rem;
@@ -64,4 +65,104 @@ p, h1, h2, h3, h4, h5, h6 {
 	--fs-bold-form: 0.9rem;
 	--lh-bold-form: 1.8rem;
 
+}
+body {
+	background-image: url('./assets/mobile/image-host.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: var(--ff-Chivo);
+}
+
+.main {
+	background-color: rgba(19,24,38,0.93);
+	height: 100%;
+	display: grid;
+	grid-template-rows: 20% 80%;
+	justify-items: center;
+	gap: 2em;
+}
+
+.header {
+	margin-top: 3.5rem;
+}
+
+.content {
+	display: grid;
+	grid-template-rows: 26% 27% 21% 26%;
+	margin-bottom: 10rem;
+/*	grid-template-rows: repeat(4, 1fr);*/
+	max-height: 400px;
+	padding: 0 1.65rem;
+
+}
+
+h2 {
+	font-weight: var(--fw-extra-light);
+	font-size: 1.625rem;
+	line-height: 2.375rem;
+}
+
+h2, p {
+	text-align: center;
+}
+
+.title {
+	color: var(--clr-aquamarine);
+}
+
+.everywhere {
+	color: var(--clr-white);
+}
+
+.paragraph {
+	color: var(--clr-light-steel-blue);
+	font-size: 15px;
+	line-height: 1.6rem;
+	font-weight: var(--fw-extra-light);
+	margin-bottom: 1rem;
+}
+
+.podcast-logos {
+	height: 17px;
+/*	width: 15px;*/
+	display: flex;
+	margin: auto;
+/*	justify-content: center;*/
+	gap: 1.2em;
+/*	align-content: center;*/
+/*margin-top: .5rem;*/
+}
+
+.google {
+	margin: auto;
+	max-width: 75px;
+	max-height: 12px;
+	width: auto;
+	height: auto;
+}
+
+.form {
+	display: grid;
+	gap: 1em;
+	font-size: var(--fs-bold-form);
+	line-height: var(--lh-bold-form);
+	font-weight: var(--fw-bold);
+/*	margin-bottom: 5rem;*/
+
+
+}
+
+input {
+	border-radius: 50px;
+	border: none;
+	padding: .6rem 0;
+}
+
+.email-address {
+	padding-left: 2rem;
+	background: var(--clr-dark-slate);
+}
+
+.request-button {
+	background: var(--clr-aquamarine);
 }
