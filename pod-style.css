@@ -186,6 +186,8 @@ input:focus {
 
 .email-address:focus {
 	color: var(--clr-white);
+	font-size: var(--fs-bold-form-tablet);
+	line-height: var(--lh-bold-form-tablet);
 }
 
 .request-button:is(:hover, :focus) {
@@ -194,10 +196,20 @@ input:focus {
 
 .email-alert {
 	color: var(--clr-red);
-	font-size: 13px;
-	line-height: 16px;
+	font-size: 0.813rem;
+	line-height: 1rem;
 	margin-left: 2rem;
 
+}
+
+#alert {
+	visibility: hidden;
+/*	opacity: 0;*/
+
+}
+
+.email-address:hover + #alert {
+	visibility: hidden;
 }
 
 
@@ -286,16 +298,16 @@ input:focus {
 
 	.email-address {
 		width: 100%;
-		padding: 1rem 0 1rem 2rem;
+		padding: 1rem 0 1rem 1.5rem;
 	}
 
 	.request-button {
 		position: absolute;
-		top: 1px;
+		top: 0;
 		right: 0;
 		bottom: 0;
 		width: 40%;
-		height: 66%;
+		height: 70%;
 		font-size: var(--fs-bold-form-tablet);
 		line-height: var(--lh-bold-form-tablet);
 		border: 2px solid var(--clr-dark-grey);
@@ -385,16 +397,16 @@ input:focus {
 
 	.email-address {
 		width: 100%;
-		padding: 1rem 0 1rem 2rem;
+		padding: 1rem 0 1rem 1.5rem;
 	}
 
 	.request-button {
 		position: absolute;
-		top: 1px;
+		top: 0;
 		right: 0;
 		bottom: 0;
 		width: 40%;
-		height: 68%;
+		height: 70%;
 
 		font-size: var(--fs-bold-form-tablet);
 		line-height: var(--lh-bold-form-tablet);
@@ -407,6 +419,10 @@ input:focus {
 
 
 
+/*#email-alert {*/
+/*	visibility: hidden;*/
+	
+}
 
 
 
