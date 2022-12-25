@@ -308,14 +308,14 @@ input:focus {
 		bottom: 0;
 		width: 40%;
 		height: 60%;
-		
+
 		font-size: var(--fs-bold-form-tablet);
 		line-height: var(--lh-bold-form-tablet);
 	}
 
 	.email-alert {
 		margin-top: 0.6rem;
-	}
+	} 
 }
 
 
@@ -402,7 +402,7 @@ input:focus {
 
 	.request-button {
 		position: absolute;
-		top: 3px;
+		top: 3.7px;
 		right: 2.5px;
 		bottom: 0;
 		width: 40%;
@@ -410,7 +410,6 @@ input:focus {
 
 		font-size: var(--fs-bold-form-tablet);
 		line-height: var(--lh-bold-form-tablet);
-/*		border: 2px solid var(--clr-dark-grey);*/
 	}
 
 	.email-alert {
