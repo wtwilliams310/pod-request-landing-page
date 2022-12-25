@@ -90,6 +90,10 @@ body {
 	font-family: var(--ff-Chivo);
 }
 
+.background-description {
+	display: none;
+}
+
 .main {
 	height: 100%;
 	display: grid;
@@ -110,7 +114,7 @@ body {
 
 }
 
-h2 {
+h1 {
 	font-weight: var(--fw-extra-light);
 	font-size: 1.625rem;
 	line-height: 2.375rem;
